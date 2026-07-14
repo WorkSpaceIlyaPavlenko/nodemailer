@@ -1,0 +1,110 @@
+<!-- ШАБЛОН C: тот же контент, что в A и B, но верстка чисто на div/flexbox, без единой таблицы.
+     Ожидаемо ломается в desktop Outlook (Word-движок). Используется одна и та же картинка cid:hero-image. -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Осенняя коллекция — pure HTML</title>
+</head>
+<body style="margin:0; padding:0; background-color:#eef0f3; font-family:Arial, Helvetica, sans-serif;">
+
+<div style="display:none; max-height:0; overflow:hidden;">
+    Скидка 20% только 3 дня — успейте забрать новую коллекцию до конца недели.
+</div>
+
+<div style="max-width:600px; margin:0 auto; background-color:#ffffff;">
+
+    <!-- Header -->
+    <div style="background-color:#161629; padding:20px 24px; display:flex; justify-content:space-between; align-items:center;">
+        <span style="color:#ffffff; font-size:20px; font-weight:bold; letter-spacing:0.5px;">NORDIC &amp; CO</span>
+        <span style="color:#cfcfe0; font-size:12px;">Каталог • Sale • Контакты</span>
+    </div>
+
+    <!-- Hero -->
+    <img src="cid:hero-image" alt="Осенняя коллекция" style="display:block; width:100%; height:auto;">
+
+    <!-- Приветствие -->
+    <div style="padding:32px 24px 8px 24px;">
+        <p style="margin:0 0 4px 0; color:#888888; font-size:13px;">Привет, Илья 👋</p>
+        <h1 style="margin:0 0 12px 0; color:#161629; font-size:26px; line-height:1.3;">Осенняя коллекция уже в каталоге</h1>
+        <p style="margin:0 0 20px 0; color:#444444; font-size:15px; line-height:1.6;">
+            Мы обновили ассортимент — новые силуэты, тёплые оттенки и материалы, которые
+            хочется трогать. Только для подписчиков рассылки: скидка <strong>20%</strong> по
+            промокоду ниже, действует 3 дня.
+        </p>
+    </div>
+
+    <!-- Промокод -->
+    <div style="margin:0 24px 24px 24px; background-color:#fff4e5; border:1px dashed #e8a33d; border-radius:6px; padding:16px; text-align:center;">
+        <span style="color:#8a5a00; font-size:13px;">Ваш промокод</span><br>
+        <span style="color:#161629; font-size:22px; font-weight:bold; letter-spacing:2px;">AUTUMN20</span>
+    </div>
+
+    <!-- CTA -->
+    <div style="text-align:center; padding:0 24px 32px 24px;">
+        <a href="#" style="display:inline-block; padding:14px 36px; background-color:#e0533d; border-radius:4px; color:#ffffff; font-size:15px; font-weight:bold; text-decoration:none;">Перейти в каталог</a>
+    </div>
+
+    <hr style="border:none; border-top:1px solid #eeeeee; margin:0 24px;">
+
+    <!-- Хиты продаж -->
+    <div style="padding:28px 24px 16px 24px;">
+        <h2 style="margin:0; color:#161629; font-size:18px;">Хиты этой недели</h2>
+    </div>
+    <div style="display:flex; gap:8px; padding:0 16px 24px 16px;">
+        <div style="flex:1;">
+            <img src="cid:hero-image" alt="Пальто шерстяное" style="display:block; width:100%; height:auto; border-radius:6px;">
+            <p style="margin:8px 0 0 0; font-size:13px; color:#333333;">Пальто шерстяное</p>
+            <p style="margin:0; font-size:14px; color:#161629; font-weight:bold;">8 990 ₽ <span style="font-size:12px; color:#aaaaaa; text-decoration:line-through; font-weight:normal;">11 240 ₽</span></p>
+        </div>
+        <div style="flex:1;">
+            <img src="cid:hero-image" alt="Свитер оверсайз" style="display:block; width:100%; height:auto; border-radius:6px;">
+            <p style="margin:8px 0 0 0; font-size:13px; color:#333333;">Свитер оверсайз</p>
+            <p style="margin:0; font-size:14px; color:#161629; font-weight:bold;">3 490 ₽</p>
+        </div>
+        <div style="flex:1;">
+            <img src="cid:hero-image" alt="Ботинки кожаные" style="display:block; width:100%; height:auto; border-radius:6px;">
+            <p style="margin:8px 0 0 0; font-size:13px; color:#333333;">Ботинки кожаные</p>
+            <p style="margin:0; font-size:14px; color:#161629; font-weight:bold;">6 200 ₽</p>
+        </div>
+    </div>
+
+    <hr style="border:none; border-top:1px solid #eeeeee; margin:0 24px;">
+
+    <!-- Отзыв -->
+    <div style="margin:28px 24px; background-color:#f7f7fb; border-radius:6px; padding:20px;">
+        <p style="margin:0 0 12px 0; color:#333333; font-size:14px; line-height:1.6; font-style:italic;">
+            «Заказываю здесь третий сезон подряд — качество стабильно радует,
+            а доставка всегда укладывается в заявленные сроки.»
+        </p>
+        <div style="display:flex; align-items:center; gap:10px;">
+            <img src="cid:hero-image" width="36" height="36" alt="Мария К." style="display:block; border-radius:50%;">
+            <div>
+                <span style="font-size:13px; color:#161629; font-weight:bold;">Мария К.</span><br>
+                <span style="font-size:12px; color:#999999;">★★★★★ · Проверенный покупатель</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align:center; padding:0 24px 32px 24px;">
+        <a href="#" style="color:#e0533d; font-size:14px; text-decoration:underline;">Смотреть весь каталог →</a>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color:#161629; padding:28px 24px; text-align:center;">
+        <div style="margin-bottom:16px;">
+            <img src="cid:hero-image" width="24" height="24" alt="Instagram" style="display:inline-block; border-radius:50%; margin:0 4px;">
+            <img src="cid:hero-image" width="24" height="24" alt="Telegram" style="display:inline-block; border-radius:50%; margin:0 4px;">
+            <img src="cid:hero-image" width="24" height="24" alt="VK" style="display:inline-block; border-radius:50%; margin:0 4px;">
+        </div>
+        <p style="margin:0 0 4px 0; color:#8a8aa3; font-size:12px;">Nordic &amp; Co · ул. Примерная, 12, Москва</p>
+        <p style="margin:0; color:#8a8aa3; font-size:12px;">
+            Вы получили это письмо, потому что подписаны на рассылку.
+            <a href="#" style="color:#cfcfe0;">Отписаться</a>
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
